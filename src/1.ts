@@ -4,7 +4,9 @@
   напишіть скорочену ініціалізацію.
 */
 
-class Student {
+// Before
+
+class StudentBefore {
   public name: string;
   public age: number;
   public grade: string;
@@ -16,4 +18,13 @@ class Student {
   }
 }
 
-export {};
+export { };
+
+// After
+
+class Student {
+  constructor(public name: string, public age: number, public grade: string) {
+  }
+}
+
+export { };
